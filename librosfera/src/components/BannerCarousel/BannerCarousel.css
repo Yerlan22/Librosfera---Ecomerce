@@ -1,0 +1,24 @@
+.banner {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: auto; 
+}
+
+.swiper-slide {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+  

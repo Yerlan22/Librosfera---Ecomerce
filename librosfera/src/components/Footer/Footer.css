@@ -1,0 +1,131 @@
+/* Estilos para el pie de página (footer) */
+.librosfera-footer {
+    /* Establece un borde superior de color gris claro */
+    border-top: 1px solid #e5e5e5;
+    /* Agrega un padding de 2rem en la parte superior e inferior */
+    padding: 2rem 0;
+    /* Establece el color de fondo a blanco */
+    background-color: #fff;
+    /* Establece la fuente de texto en Arial y una fuente genérica sans-serif */
+    /* Ajusta la altura de línea para mejorar la legibilidad */
+    line-height: 1.6;
+    /* Se sobreescribe el color de fondo a un color beige claro */
+    background-color: #faf3e0;
+  }
+  
+  /* Estilos para el contenedor del pie de página */
+  .librosfera-footer__container {
+    /* El contenedor ocupa el 100% del ancho disponible */
+    width: 100%;
+    /* Establece un ancho máximo de 1200px para mantener el contenido centrado */
+    max-width: 1200px;
+    /* Centra el contenedor en la página */
+    margin: 0 auto;
+    /* Agrega un padding de 1rem en los lados del contenedor */
+    padding: 0 1rem;
+  }
+  
+  /* Estilos para el grid dentro del footer */
+  .librosfera-footer__grid {
+    /* Usa un layout de grid */
+    display: grid;
+    /* Por defecto, el grid tendrá una sola columna */
+    grid-template-columns: 1fr;
+    /* Establece un espacio de 2rem entre las columnas */
+    gap: 2rem;
+  }
+  
+  /* Estilos para el grid en pantallas de tamaño medio en adelante */
+  @media (min-width: 768px) {
+    .librosfera-footer__grid {
+      /* Cuando el ancho de la pantalla sea mayor o igual a 768px, el grid tendrá 4 columnas */
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Estilos para los títulos dentro de las secciones del footer */
+  .librosfera-footer__section h3 {
+    /* Establece un peso de fuente de 500 para los títulos */
+    font-weight: 500;
+    font-size: 20px;
+    /* Establece un color oscuro para los títulos */
+    color: #111827;
+    /* Agrega un margen inferior de 1rem para separar los títulos del contenido */
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilos para las listas de enlaces dentro de las secciones */
+  .librosfera-footer__links {
+    /* Elimina los puntos de lista por defecto */
+    list-style: none;
+    /* Elimina el padding por defecto */
+    padding: 0;
+  }
+  
+  /* Estilos para cada elemento de la lista dentro de los enlaces */
+  .librosfera-footer__links li {
+    /* Agrega un margen inferior de 0.5rem para separar los elementos de la lista */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilos para los enlaces dentro del footer */
+  .librosfera-footer__links a {
+    /* Elimina el subrayado predeterminado de los enlaces */
+    text-decoration: none;
+    /* Establece un color gris para los enlaces */
+    color: #4b5563;
+    /* Establece el tamaño de la fuente en 0.875rem */
+    font-size: 0.875rem;
+    /* Aplica una transición suave al cambio de color */
+    transition: color 0.2s;
+  }
+  
+  /* Estilos para los enlaces cuando el usuario pasa el ratón sobre ellos */
+  .librosfera-footer__links a:hover {
+    /* Cambia el color a un tono más oscuro cuando el usuario pasa el ratón */
+    color: #111827;
+  }
+  
+  /* Estilos para los iconos de redes sociales */
+  .librosfera-footer__social-icons {
+    /* Usa flexbox para alinear los iconos de forma horizontal */
+    display: flex;
+    /* Establece un espacio de 1rem entre los iconos */
+    gap: 1rem;
+  }
+  
+  /* Estilos para cada icono de red social */
+  .librosfera-footer__social-icon {
+    /* Establece el color gris para los iconos */
+    color: #4b5563;
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none;
+    /* Aplica una transición suave al cambio de color */
+    transition: color 0.2s;
+  }
+  
+  /* Estilos para los iconos de redes sociales cuando el usuario pasa el ratón sobre ellos */
+  .librosfera-footer__social-icon:hover {
+    /* Cambia el color a un tono más oscuro cuando el usuario pasa el ratón */
+    color: #111827;
+  }
+  
+  /* Estilos para elementos con la clase .sr-only (para accesibilidad) */
+  .sr-only {
+    /* Coloca el elemento fuera de la vista, pero lo mantiene accesible para lectores de pantalla */
+    position: absolute;
+    /* Ajusta el tamaño del elemento a 1px por 1px */
+    width: 1px;
+    height: 1px;
+    /* Elimina cualquier padding y margen */
+    padding: 0;
+    margin: -1px;
+    /* Oculta el elemento de la vista */
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    /* Evita que el texto ocupe espacio en la página */
+    white-space: nowrap;
+    /* Elimina el borde del elemento */
+    border-width: 0;
+  }
+  

@@ -1,0 +1,91 @@
+/* Se aplica un relleno de 1rem en la parte superior e inferior del contenedor de la sección de valores */
+.valores-container {
+  padding: 1rem 0;
+}
+
+/* Se establece el contenedor principal de la sección de valores */
+.valores-content {
+  /* Se limita el ancho máximo a 1200px y se centra el contenido */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* Se usa flexbox para alinear los elementos */
+  display: flex;
+  align-items: center; /* Se alinea verticalmente en el centro */
+  gap: 2rem; /* Se establece un espacio de 2rem entre los elementos */
+  padding: 0 1rem; /* Se aplica un relleno de 1rem a los lados */
+}
+
+/* Se establece el contenedor de la imagen con flexibilidad */
+.valores-image-container {
+  flex: 1;
+}
+
+/* Se aplica un estilo a la imagen dentro del contenedor de la imagen */
+.valores-image {
+  width: 100%; /* Se ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+  border-radius: 4px; /* Se redondean las esquinas de la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Se aplica una sombra sutil alrededor de la imagen */
+}
+
+/* Se aplica el estilo para el contenedor de texto */
+.valores-text {
+  flex: 1;
+  display: flex; /* Se utiliza flexbox para organizar los elementos */
+  flex-direction: column; /* Se organiza en una columna */
+  align-items: center; /* Se alinean los elementos al centro */
+}
+
+/* Se establece el estilo del título de la sección de valores */
+.valores-title {
+  font-size: 35px; /* Tamaño de fuente grande para el título */
+  margin-bottom: 1.5rem; /* Se aplica un margen inferior de 1.5rem */
+  color: #222; /* Se establece el color del texto */
+}
+
+/* Se define el estilo de los párrafos dentro de la sección de valores */
+.valores-paragraph {
+  font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor que el tamaño base */
+  line-height: 1.6; /* Se establece el alto de la línea para una lectura cómoda */
+  margin-bottom: 1rem; /* Se aplica un margen inferior de 1rem */
+  color: #333; /* Color de texto oscuro */
+  text-align: center; /* Se centra el texto */
+}
+
+/* Se aplica el estilo para el botón */
+.valores-button {
+  margin-top: 1rem; /* Se agrega un margen superior de 1rem */
+  padding: 0.75rem 1.5rem; /* Se define el relleno dentro del botón */
+  background-color: #eab308; /* Se establece un color de fondo cálido */
+  color: white; /* Color blanco para el texto */
+  border: none; /* Se elimina el borde del botón */
+  border-radius: 4px; /* Se redondean las esquinas del botón */
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  cursor: pointer; /* Se cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Se establece una transición suave para el color de fondo */
+  align-self: center; /* Se alinea el botón al centro dentro de su contenedor */
+}
+
+/* Se cambia el color de fondo del botón cuando el usuario pasa el cursor sobre él */
+.valores-button:hover {
+  background-color: #ca8a04; /* El fondo se oscurece ligeramente */
+}
+
+/* Media query para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+  /* Se cambia la dirección del flexbox a columna para una disposición vertical */
+  .valores-content {
+    flex-direction: column;
+  }
+
+  /* Se asegura que el contenedor de texto se alinee al centro en pantallas pequeñas */
+  .valores-text {
+    align-items: center;
+  }
+
+  /* Se centra el título en pantallas pequeñas */
+  .valores-title {
+    text-align: center;
+  }
+}

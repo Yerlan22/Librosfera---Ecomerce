@@ -1,0 +1,20 @@
+/* Se aplica un color de fondo claro a toda la página */
+html body {
+  background-color: #fffbf0;
+}
+
+/* Se configura la sección principal para ocupar mínimo el 60% de la pantalla */
+/* Se centra todo el contenido en el medio */
+.homepage-main {
+  min-height: 60vh;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+}
+
+/* Se asegura que la sección principal use todo el ancho */
+/* Se eliminan márgenes y rellenos para que quede ajustado */
+.homepage-main {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}

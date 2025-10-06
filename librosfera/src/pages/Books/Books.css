@@ -1,0 +1,151 @@
+.books-container {
+  background-color: #fffbf0;
+  max-width: 1200px;
+  padding: 30px;
+  margin: auto;
+}
+
+.books-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  margin: 0 25px;
+  justify-items: center;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  height: 300px;
+  width: 190px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.book-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.book-image-container {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+}
+
+.book-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: transparent;
+  padding: 3px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  height: 110px;
+  background-color: transparent;
+  align-items: center;
+}
+
+.book-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  color: #222;
+  height: 34px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+}
+
+.book-author {
+  font-size: 13px;
+  color: #555;
+  margin: 0 0 5px 0;
+  height: 18px;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: ellipsis;
+}
+
+.book-price {
+  font-size: 10px;
+  font-weight: bold;
+  color: #222;
+  margin: auto 0 0 0;
+}
+
+@media (max-width: 1200px) {
+  .books-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .book-card {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .books-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .book-card {
+    width: 175px;
+  }
+}
+
+@media (max-width: 768px) {
+  .books-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .book-card {
+    width: 160px;
+    height: 280px;
+  }
+
+  .book-image-container {
+    height: 170px;
+  }
+
+  .book-info {
+    height: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 0 10px;
+  }
+
+  .book-card {
+    width: 150px;
+    height: 260px;
+  }
+
+  .book-image-container {
+    height: 160px;
+  }
+
+  .book-info {
+    height: 100px;
+  }
+}

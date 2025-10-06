@@ -1,0 +1,159 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+}
+
+.book {
+  width: 20%; 
+  padding: 10px;
+  margin: 0 px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 320px; 
+}
+
+.bookCarousel-cover {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.bookCarousel-link {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.bookCarousel-link:hover {
+  transform: scale(1.05);
+}
+
+.bookCarousel-link:hover .clickable-image {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bookCarousel-cover img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: box-shadow 0.2s ease;
+}
+
+.clickable-image {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bookCarousel-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 80px;
+}
+
+.bookCarousel-title {
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 20px;
+}
+
+.bookCarousel-author {
+  color: #555;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 18px;
+}
+
+.bookCarousel-price {
+  font-weight: bold;
+  color: #222;
+  font-size: 14px;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  border: 1px solid #ddd;
+  z-index: 10;
+  user-select: none;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-arrow.prev {
+  left: 10px;
+}
+
+.carousel-arrow.next {
+  right: 10px;
+}
+
+@media (max-width: 992px) {
+  .book {
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .book {
+    width: 33.333%;
+  }
+}
+
+@media (max-width: 576px) {
+  .book {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .book {
+    width: 100%;
+  }
+}

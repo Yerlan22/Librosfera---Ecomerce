@@ -1,0 +1,152 @@
+.book-container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.book-image {
+  display: flex;
+  justify-content: center;
+}
+
+.book-image img {
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.book-info h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.book-info h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.book-price {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.book-price span {
+  font-size: 1.1rem;
+  color: black;
+}
+
+.book-stock {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.book-stock span {
+  color: #16a34a;
+}
+
+.book-quantity {
+  margin-top: 16px;
+}
+
+.book-quantity select {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.btn-add-cart {
+  margin-top: 24px;
+  background-color: #eab308;
+  color: #fff;
+  font-weight: 400;
+  padding: 8px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-add-cart:hover {
+  background-color: #ca8a04;
+}
+
+.book-description {
+  margin-top: 40px;
+}
+
+.book-description h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.book-description p {
+  color: #555;
+}
+
+.related-books {
+  margin-top: 80px;
+}
+
+.related-books h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.related-books-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.related-book {
+  text-align: center;
+}
+
+.related-book img {
+  width: 128px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.related-book h4 {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.related-book p {
+  color: #777;
+  font-size: 0.875rem;
+}
+
+.related-price {
+  color: #16a34a;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .book-main {
+    grid-template-columns: 1fr;
+  }
+
+  .related-books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  
